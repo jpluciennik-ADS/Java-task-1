@@ -17,4 +17,8 @@ public class Student {
     public void setType(StudentType type) {
         this.type = type;
     }
+
+    public String getType() {
+        return type.getType();
+    }
 }

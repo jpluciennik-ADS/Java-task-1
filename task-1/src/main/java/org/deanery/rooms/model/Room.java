@@ -14,4 +14,16 @@ public class Room {
     public void setType(RoomType type) {
         this.type = type;
     }
+
+    public int getOpeningHour() {
+        return openingHour;
+    }
+
+    public int getClosingHour() {
+        return closingHour;
+    }
+
+    public String getType() {
+        return type.getType();
+    }
 }
