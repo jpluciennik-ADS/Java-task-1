@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class mockStudents {
-    public static List<Student> mockStudents() {
+    public static List<Student> createStudents() {
         Student fullTime1 = new FullTimeStudent("27014", "Andrzej", "Krasiecki");
         Student fullTime2 = new FullTimeStudent("20901", "Martyna", "Podgorska");
         Student fullTime3 = new FullTimeStudent("25821", "Matylda", "Bak");
@@ -19,5 +19,4 @@ public class mockStudents {
         List<Student> listOfStudents = new ArrayList<>(List.of(fullTime1, fullTime2, fullTime3, parTime1, parTime2, parTime3));
         return listOfStudents;
     }
-
 }
