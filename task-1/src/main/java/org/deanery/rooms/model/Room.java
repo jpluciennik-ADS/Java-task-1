@@ -1,18 +1,15 @@
 package org.deanery.rooms.model;
 
 public class Room {
-    private String id;
+    private final String id;
     private RoomType type;
-    private int openingHour;
-    private int closingHour;
+    private final int openingHour;
+    private final int closingHour;
 
     public Room(String id, int openingHour, int closingHour) {
         this.id = id;
         this.openingHour = openingHour;
         this.closingHour = closingHour;
-    }
-    public void setType(RoomType type) {
-        this.type = type;
     }
 
     public int getOpeningHour() {
@@ -29,5 +26,9 @@ public class Room {
 
     public String getType() {
         return type.getType();
+    }
+
+    public void setType(RoomType type) {
+        this.type = type;
     }
 }
