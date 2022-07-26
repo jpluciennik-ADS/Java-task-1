@@ -33,14 +33,12 @@ public class Student {
         Deanery.visitDeanery(this, room, hour);
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd 'at' HH:mm:ss").format(new java.util.Date());
 
-        String raport =
-                        "--------------------------------------------------\n" +
-                        String.format("%18s", "") + "STUDENT " + id + String.format("%18s", "") + "\n" +
-                        "First Name  | " + name + "\n" +
-                        "Second Name | " + surname + "\n" +
-                        "Raport generated on " + timeStamp + "\n" +
-                        "Room number: " + room.getId() + "\n" +
-                        "--------------------------------------------------";
-        return raport;
+        return  "--------------------------------------------------\n" +
+                String.format("%18s", "") + "STUDENT " + id + String.format("%18s", "") + "\n" +
+                "First Name  | " + name + "\n" +
+                "Second Name | " + surname + "\n" +
+                "Raport generated on " + timeStamp + "\n" +
+                "Room number: " + room.getId() + "\n" +
+                "--------------------------------------------------";
     }
 }
