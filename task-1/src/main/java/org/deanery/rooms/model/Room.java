@@ -23,6 +23,10 @@ public class Room {
         return closingHour;
     }
 
+    public String getId() {
+        return id;
+    }
+
     public String getType() {
         return type.getType();
     }
