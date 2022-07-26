@@ -29,6 +29,10 @@ public class Student {
         this.type = type;
     }
 
+    public String getId() {
+        return id;
+    }
+
     public String serve(Room room, Integer hour) throws WrongRoomException, WrongHoursException {
         Deanery.visitDeanery(this, room, hour);
         String timeStamp = new SimpleDateFormat("yyyy.MM.dd 'at' HH:mm:ss").format(new java.util.Date());
